@@ -13,7 +13,7 @@ The is a demonstration of a NodeJS server that consumes data from a given URL an
 
 3. From the projects root run `bower update`
 
-4. From the projects root run `gulp`
+4. From the projects root run `gulp` --OK if this step fails as the assets are part of the repo.
 
 ### Usage
 First, install grunt if you don't already have it installed:
