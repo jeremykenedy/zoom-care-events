@@ -1,0 +1,39 @@
+<div class="panel panel-default event-item">
+  	<div class="panel-body">
+		<div class="row" id="{{id}}">
+			<a href="#" class="close-x" ><span class="sr-only">close</span></a>
+			<div class="col-sm-2">
+				<p class="text-muted text-uppercase text-larger">
+					<b>
+						<time class="date" datetime="{{day}}">
+							{{day}}
+						</time>
+						<br />
+						<time class="time-start">{{start}}</time>-<time class="time-end">{{finish}}</time>
+					</b>
+				</p>
+			</div>
+			<div class="col-sm-10">
+				<h4>{{title}}</h4>
+				<p class="where"><b>{{where}}</b></p>
+				<p class="desc">{{ description }}</p>
+				<a href="{{link}}" class="rsvp"><b>RSVP</b> <span class="chevron right"></span></a>
+				<!--<script type="text/javascript">document.write('<a class="btn btn-primary btn-more" href="/events/'+(count = count + 1)+'">more</a>');</script>-->
+			</div>
+
+			<span class="addtocalendar atc-style-blue">
+			    <var class="atc_event">
+			        <var class="atc_date_start">{{start}}</var>
+			        <var class="atc_date_end">{{finish}}</var>
+			        <var class="atc_timezone">UTC</var>
+			        <var class="atc_title">{{title}}</var>
+			        <var class="atc_description">{{description}}</var>
+			        <var class="atc_location">{{where}}</var>
+			        <var class="atc_organizer">Zoom+</var>
+			        <var class="atc_organizer_email">prime@zoomcare.com</var>
+			    </var>
+			</span>
+
+		</div>
+  	</div>
+</div>

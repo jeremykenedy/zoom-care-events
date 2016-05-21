@@ -1,5 +1,5 @@
 {
-  "name": "htmling-demo-app",
+  "name": "ZoomCare-Test",
   "version": "0.0.1",
   "ignore": [
     "**/.*",
@@ -8,7 +8,8 @@
   ],
   "dependencies": {
     "jquery": "~2.1.1",
-    "bootstrap": "~3.2.0",
-    "polymer": "Polymer/polymer#~0.3.3"
+    "bootstrap": "~3.3.6",
+    "polymer": "Polymer/polymer#~0.3.3",
+    "addtocalendar": "^1.5.1"
   }
 }

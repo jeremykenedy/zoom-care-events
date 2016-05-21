@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     develop: {
       server: {
-        file: 'app.js'
+        file: 'server.js'
       }
     },
     watch: {
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
       },
       server: {
         files: [
-          'app.js',
+          'server.js',
           'routes/*.js'
         ],
         tasks: ['develop', 'delayed-livereload']
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
   grunt.registerTask('delayed-livereload', 'Live reload after the node server has restarted.', function () {
     var done = this.async();
     setTimeout(function () {
-      request.get('http://localhost:' + reloadPort + '/changed?files=' + files.join(','),  function (err, res) {
+      request.get('http://192.168.217.156:' + reloadPort + '/changed?files=' + files.join(','),  function (err, res) {
           var reloaded = !err && res.statusCode === 200;
           if (reloaded) {
             grunt.log.ok('Delayed live reload successful.');

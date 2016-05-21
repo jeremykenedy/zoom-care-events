@@ -1,0 +1,45 @@
+// EVENT ITEM COMMON ELEMENTS
+.title{
+  color: @title-color;
+  background: @title-bg;
+  padding: .4em .5em;
+  margin: 1em 0 .5em;
+}
+
+// EVENT ITEM
+.event-item {
+  background: @event-bg;
+  border-radius: 0;
+  h4{
+    margin-top: 0;
+  }
+  .panel-body{
+    position: relative;
+    border-bottom: 3px solid @event-border-color;
+    @media(min-width: @tablet) {
+      padding: 15px 25px;
+    }
+  }
+  &:hover {
+    background: @event-bg-hover;
+    .close-x {
+      display: block;
+      -webkit-animation: fadeInFromNone @animation-speed ease-out;
+      -moz-animation: fadeInFromNone @animation-speed ease-out;
+      -o-animation: fadeInFromNone @animation-speed ease-out;
+      animation: fadeInFromNone @animation-speed ease-out;
+    }
+
+  }
+}
+
+// RSVP STYLING
+a {
+  &.rsvp {
+    color: @rsvp-link-color;
+    text-decoration: none;
+    .chevron {
+        color: @rsvp-chevron-color;
+    }
+  }
+}

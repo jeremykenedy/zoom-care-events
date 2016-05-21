@@ -1,0 +1,76 @@
+// BUTTONS
+.btn {
+  border-radius: 0;
+}
+
+.show-all {
+  display: none;
+}
+
+// SHOW MORE BUTTON/LABEL STYLING
+.label {
+  font-weight: 300;
+  letter-spacing: .5px;
+  padding: .2em .5em;
+  .chevron {
+    &.bottom:before {
+        top: .5em;
+        margin: 0 .4em 0 0;
+        width: 8px;
+        height: 8px;
+    }
+    &.top:before {
+        top: .9em;
+        margin: 0 .5em 0 0;
+        width: 8px;
+        height: 8px;
+    }
+  }
+}
+
+// CLOSE X
+.close-x {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: .25em;
+  top: .2em;
+  cursor: pointer;
+  z-index: 1;
+  &:hover:before,
+  &:hover:after {
+    background: @close-x-color;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: @close-x-color-hover;
+    -webkit-transition: all @animation-speed ease-in-out;
+    -moz-transition: all @animation-speed ease-in-out;
+    -o-transition: all @animation-speed ease-in-out;
+    transition: all @animation-speed ease-in-out;
+
+  }
+  &:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
