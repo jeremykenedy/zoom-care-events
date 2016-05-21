@@ -7,7 +7,7 @@ The is a demonstration of a NodeJS server that consumes data from a given URL an
 
 1. In Terminal Run
 
-	`sudo git clone git@bitbucket.org:jeremykenedy/REPONAME REPOLOCAL`
+	`sudo git clone git@bitbucket.org:jeremykenedy/zoom-events.git zoom-events`
 
 2. From the projects root run `sudo npm install`
 
