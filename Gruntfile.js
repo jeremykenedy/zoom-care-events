@@ -8,7 +8,7 @@ module.exports = function (grunt) {
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
   grunt.loadNpmTasks('grunt-contrib-less');
-
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   var reloadPort = 35729, files;
 
   grunt.initConfig({
@@ -32,13 +32,13 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['ui/app/{,*/}*.js'],
-        tasks: ['jshint', 'browserify'],
+        tasks: ['jshint', 'browserify','uglify'],
         options: {
           livereload: reloadPort
         }
       },
       less: {
-        files: ['less/*.less'],
+        files: ['less/{,*/}*.less'],
         tasks: ["less"],
         options: {
           livereload: reloadPort
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
           cleancss: true
         },
         files: {
-          "public/css/app.css": "less/app.less"
+          "public/css/app.min.css": "less/app.less"
         }
       }
     },
@@ -89,6 +89,20 @@ module.exports = function (grunt) {
         'public/js/src/{,*/}*.js'
       ]
     },
+    uglify: {
+      options: {
+        mangle: false,
+        beautify: false,
+        compress: true,
+        sourceMap: true
+      },
+      myTarget: {
+        files: {
+          'public/js/app.min.js': ['ui/app/{,*/}*.js']
+        }
+      }
+    },
+
   });
 
   grunt.config.requires('watch.server.files');
