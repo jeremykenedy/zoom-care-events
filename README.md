@@ -51,13 +51,11 @@ You should also be able to navigate to [http://192.168.X.XXX:3000/](http://192.1
 | Uses [HTMLing](https://github.com/codemix/htmling) |
 | Uses [express.js](expressjs.com) |
 | Uses [polymer.js](http://polymer-project.org/) |
-| Uses [GRUNT](http://gruntjs.com/) |
 | Uses [jQuery 2.1.1](https://jquery.com/) |
 | Uses [Bootstrap 3.3.6](3.3.6) |
 | Uses [REQUEST](https://github.com/request/request) |
 | Uses [json-parse-stream](https://github.com/chrisdickinson/json-parse-stream) |
 | Uses [addtocalendar](http://addtocalendar.com/) |
-| Uses [GRUNT](http://gruntjs.com/) |
 
 ## License
 
