@@ -1,4 +1,4 @@
-# Zoom+ Events Demo App [![License](http://jeremykenedy.com/license-mit.svg)]()
+# Zoom+ Events Demo App [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The is a demonstration of a NodeJS server that consumes data from a given URL and produces the rendered web page output below. The URL to use returns a JSON array of events.
 
